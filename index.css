@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    height:800px;
+    background-image: url("img/office.jpg");
+    
+   
+   
+    
+   
+}
+
+.icon {
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+#formDepot{
+
+    background-color: rgba(0, 0, 0, 0.822);  
+    margin-bottom: 70px;
+    color:#fff; 
+    padding: 40px;
+}
+
+
+
+button{
+
+color: #ffffff;
+background-color: #fa6a73;
+padding: 10px;
+border-color: rgba(0, 0, 0, 0.822);
+}
+button:hover{
+
+box-shadow: 5px 5px 5px black;
+}
+#logo{
+margin-right:auto;
+	margin-left:auto;
+    text-align:center;
+}

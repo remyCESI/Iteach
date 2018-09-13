@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deposer un devoir</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="" id="contact">
+
+           
+
+            <form id="formDepot" method="POST" action="upload_work.php" enctype="multipart/form-data" style="padding-bottom:20px" class="offset-md-3 col-md-6">
+                
+                <div id="logo"><img src="img/logo.png"></div>
+                <hr style="background-color:#fa6a73">
+                <div class="row">
+                        <div class="col">
+                                <label>Nom</label><i id="name_check" class="icon fas fa-check-circle"></i>    
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+                        </div>
+                        <div class="col">
+                                <label>Prenom</label><i id="first_name_check" class="icon fas fa-check-circle"></i>
+                          <input type="text" class="form-control" id="first_name" name="first_name" required placeholder="Prenom">
+                        </div>
+                      </div>
+                <div class="form-group">
+                        <label>Classe</label><i class="icon fas fa-check-circle"></i>
+                        <select id="class" required name="class" class="form-control">
+                            <option>Choisir</option>
+                            <option>CE1</option>
+                            <option>CE2</option>
+                            <option>CM1</option>
+                            <option>CM2</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                    <label>Type de document</label><i id="subject_check" class="icon fas fa-check-circle"></i>
+                    <input class="col-12 form-control" id="subject" name="subject" required="" placeholder="RechercheNapoleon" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Votre Document</label>
+                    <input class="col-12 form-control" id="fichier" name="work" required="" type="file"> </input>
+                </div>
+                <button id="submit" type="submit" style="border-radius:5px;" class="col-12  ">Envoyer</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="check.js"></script>
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
