@@ -31,10 +31,13 @@ color: #ffffff;
 background-color: #fa6a73;
 padding: 10px;
 border-color: rgba(0, 0, 0, 0.822);
+
+display: none;
 }
 button:hover{
 
 box-shadow: 5px 5px 5px black;
+
 }
 #logo{
 margin-right:auto;
