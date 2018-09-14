@@ -1,46 +1,276 @@
-body{
-    padding: 0;
-    margin: 0;
-    height:800px;
-    background-image: url("img/office.jpg");
+body {
+    font-family: "Lato", sans-serif;
     
-   
-   
-    
-   
+
 }
 
-.icon {
-    margin-left: 10px;
-    visibility: hidden;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    /* background-image: linear-gradient(to right,#ff8ffe,#b417b2); */
+    background-image: linear-gradient(to right,#ff9881,#ffb2a1);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    
 }
 
-#formDepot{
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
 
-    background-color: rgba(0, 0, 0, 0.822);  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#menu{
+    background-color: black;
+    
+    padding: 10px;
+    color: #f1f1f1;
+}
+
+#topBar{
+
+    
+    padding: 10px;
+
+}
+
+h2{
+    text-align: center;
+    color: #ff9881;
+    opacity: 0.8;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#remy{
+    box-shadow: 10px 10px 5px grey;
+}
+#parleDeMoi{
     margin-bottom: 70px;
-    color:#fff; 
-    padding: 40px;
 }
 
+#transitionApp{
 
+    height:600px;
+    
+    
+    background-image: url('img/switch.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9
+    }
 
+.carte{
+ height: 300px;
+ width:250px;
+ text-align: center;
+}
+#transitionRea{
+
+        height:600px;
+        
+        
+        background-image: url('img/Realisation.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9
+        }
+.text {
+    background-color: #ff9881;
+    color: white;
+    font-size: 10vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* mix-blend-mode: screen; */
+    
+  }
+  #textLogoAcceuil {
+    background-color: #ff9881;
+    color: white;
+    font-size: 10vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    right: 50%;
+    transform: translate(50%, 60%);
+    /* mix-blend-mode: screen; */
+    
+  }
+  #transitionTemoin{
+
+    height:600px;
+    
+    
+    background-image: url('img/handshake.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9
+    }
+  #transitionContact{
+
+    height:600px;
+    
+    
+    background-image: url('img/bgCont.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9
+    }
+
+#contact{
+
+        margin-bottom: 70px;
+}
 button{
 
-color: #ffffff;
-background-color: #fa6a73;
-padding: 10px;
-border-color: rgba(0, 0, 0, 0.822);
-
-display: none;
+    color: #ffffff;
+    background-color: #ff9881;
+    padding: 10px;
 }
 button:hover{
 
-box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px grey;
+}
+#description{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    
+
+    margin-bottom: 40px;
+    
+} 
+
+#descriptionnous{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+    
+
+    margin-bottom: 40px;
+    
+} 
+
+.carte>i{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-#logo{
-margin-right:auto;
-	margin-left:auto;
-    text-align:center;
+
+.carte>h4{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
+
+h4{
+
+        margin-top : 20px;
+        color: #ff9881;
+
+}
+
+#arrow{
+
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: rgb(255, 31, 31);
+}
+#inputstatu{
+
+    border-radius: 0px;
+    border-color:black; 
+}
+#icon{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    
+}
+
+.carousel{
+
+    margin-bottom: 40px;
+}
+
+.photo{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   justify-content: center;
+
+    align-items: center;
+  
+}
+.photo>img{
+
+    height:300px ;
+    width: 300px;
+}
+
+@media screen and (max-width: 1700px) {
+    
+    
+
+    #remy{
+    
+            width: 300px;
+           
+        }}

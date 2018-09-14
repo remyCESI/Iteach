@@ -1,53 +1,90 @@
 
 
-$("input").keyup( function(){
-
-//Id object
-var IDname = $("#name").attr("id"); 
-var IDfirstName = $("#firstName").attr("id"); 
-var IDclasse = $("#classe").attr("id"); 
-var IDtypeDoc = $("#subject").attr("id"); 
-var IDfichier = $("#fichier").attr("id"); 
-
-//objet 
-var name = $("#name"); 
-var firstName = $("#firstName");
-var classe = $("#classe");
-var typeDoc = $("#subject");
-var fichier = $("#fichier"); 
+// calcul to resize the window
 
 
+       
+ 
+if( $(window).width() < 350){
 
-//button 
-
-var boutton = $("button");
-
-
-
-var filter = /^[a-zA-Z0-9]{3,20}$/;
-
-
-if(filter.test(name.val()) && filter.test(firstName.val()) &&filter.test(typeDoc.val())&& classe.val()!== "Choisir" && fichier.val()!== ""){
-
-    button.append('<i style ="margin-left:10px;" id="check" class="icon fas fa fa-check-circle"></i>')
-
-    boutton.removeAttr("disabled");
-
-
-    
-}
-else{
-
-    button.attr('disabled',"");
-    
-    if($('.icon').attr("id")=="check"){
-    $('.icon').remove();
-     button.append('<i style ="margin-left:10px id="error" class="fas fa-times-circle"></i>')
-    }
+    $('#logo').attr('src','img/logoSM.png');
 
 }
 
 
+// SIDEBAR
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    $("#topBar").css("display","none");
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    $("#topBar").css("display","block");
+}
+
+
+
+
+ 
+
+        $(function(){
+  
+            var scrollY = function(){
+                var supportPageOffset = window.pageXOffset !== undefined;
+        var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+        
+        
+        return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+            }
+        
+            $(window).scroll(function(){
+                var container = document.getElementById('topBar')
+                var element = document.getElementById('topBar').getBoundingClientRect().top
+                var element2 = document.getElementById('offre').getBoundingClientRect().top
+                var element1 = element + scrollY()
+               
+        
+                if(scrollY()>element){
+                    container.classList.add('fixed-top')
+                    
+                    if(scrollY()>element2){
+                        $('#topBar').css('background-color','white')
+                    }
+                }
+                else{
+                    container.classList.remove('fixed-top')
+                    
+                        $('#topBar').css('background-color','')
+
+                        $(window).resize();
+                    
+                }
+              
+        
+                
+                   
+                
+            
+            })
+          
+        });
+
+
+        $('a[href^="#"]').click(function(){
+            var the_id = $(this).attr("href");
+            if (the_id === '#') {
+                return;
+            }
+            $('html, body').animate({
+                scrollTop:$(the_id).offset().top
+            }, 1000);
+            return false;
+        });
     
 
-})
+
+
+      $(".carousel").carousel({
+          interval: 1000
+      })
