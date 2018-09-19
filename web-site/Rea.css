@@ -1,0 +1,71 @@
+#tete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+
+   
+    
+}
+
+#tete>div{
+    margin: 10px;
+}
+
+
+
+#Tiphaine{
+    background-image: url("img/Tiphaine.jpg");
+}
+#Lea{
+    background-image: url("img/Lea.jpg");
+}
+#Victoria{
+    background-image: url("img/Victoria.jpg");
+}
+#Cecile{
+    background-image: url("img/Cecile.jpg");
+}
+#Axelle{
+    background-image: url("img/Axelle.jpg");
+}
+#Sarah{
+    background-image: url("img/Sarah.jpg");
+}
+#Archi{
+    background-image: url("img/Archi.jpg");
+}
+.positionTete{
+    width: 300px;
+    height: 300px;
+
+    text-align: center;
+   
+  
+    
+}
+
+.textTete{
+
+    margin-top:75%;
+    color: #000000;
+    background-color: #ffffff96; 
+   
+    
+}
+.positionTete:hover{
+   
+    opacity: 0.5;
+}
+
+.visuPhoto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.visuPhoto>div{
+
+    margin: 10px;
+}

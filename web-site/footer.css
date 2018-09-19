@@ -1,0 +1,30 @@
+footer{
+    background-image: url('img/footBG.jpg');
+    height: 300px;
+    width: auto;
+ 
+    
+    
+}
+
+#textReseau{
+
+ 
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: space-around;
+   
+
+   padding-top: 120px;
+} 
+#textReseau>a{
+    padding: 5px;
+border-style: solid;
+    border-radius: 20px;
+    border-color:#ff9881 ;}
+
+    #textReseau>a:hover{
+       
+        box-shadow: 10px 10px 5px rgb(14, 14, 14)
+    }
