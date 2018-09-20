@@ -49,7 +49,7 @@ function closeNav() {
                     container.classList.add('fixed-top')
                     
                     if(scrollY()>element2){
-                        $('#topBar').css('background-color','white')
+                        $('#topBar').css('background-color','')
                     }
                 }
                 else{

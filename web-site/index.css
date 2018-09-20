@@ -8,7 +8,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     top: 0;
     right: 0;
     /* background-image: linear-gradient(to right,#ff8ffe,#b417b2); */
@@ -26,6 +26,7 @@ body {
     color: #fff;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sidenav a:hover {
@@ -46,15 +47,14 @@ body {
 }
 
 #menu{
-    background-color: black;
-    
+    /*background-color: #ff9881;*/
     padding: 10px;
-    color: #f1f1f1;
+    color: #ff9881;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #topBar{
-
-    
     padding: 10px;
 
 }
@@ -63,9 +63,9 @@ h2{
     text-align: center;
     color: #ff9881;
     opacity: 0.8;
-
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 #remy{
@@ -91,9 +91,15 @@ h2{
 }
 	
 .carte{
+    margin-top: 10px;
  height: 300px;
  width:250px;
  text-align: center;
+}
+
+.carte>p {
+    padding: 5px;
+    text-align: center;
 }
 #transitionRea{
 
@@ -218,7 +224,9 @@ button:hover{
     justify-content: center;
 }
 
-
+#iteach {
+    margin-bottom: 0px;
+}
 
 
 h4{
@@ -242,7 +250,6 @@ h4{
 #icon{
     display: flex;
     justify-content: center;
-    background-color: gray;
     
 }
 
@@ -262,22 +269,27 @@ h4{
     align-items: center;
   
 }
-.photo>img{
 
-    height:300px ;
-    width: 300px;
+.team {
+    display: flex;
+    flex-direction: row;
 }
 
-@media screen and (max-width: 1700px) {
-    
-    .photo>img{
+.team>img{
 
-    height:100px ;
-    width: 100px;
-	}
+    height:150px ;
+    width: 150px;
+}
 
-    #remy{
+#team-title {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 400px) {
     
-            width: 300px;
-           
-        }}
+
+    #logo-home{
+        width: 334px;
+        height: 188px;
+    }
+}

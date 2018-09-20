@@ -7,17 +7,19 @@ $(document).ready(function(){
       
       var telephone = $(this).find('#telephone').val();
       var sujet= $(this).find('#sujet').val();
+      var nom= $(this).find('#nom').val();
       var email= $(this).find('#email').val();
       var message= $(this).find('#message').val();
 
       console.log(subject)
   
       $.post(
-        'SendMail.php',
+        'sendMail.php',
         {
             telephone: telephone,
             sujet: sujet,
             email :email,
+            nom: nom,
             message: message
 
   
