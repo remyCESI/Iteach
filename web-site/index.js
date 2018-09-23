@@ -16,11 +16,13 @@ if( $(window).width() < 350){
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     $("#topBar").css("display","none");
+    $("#formCo").css("z-index","-10");
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     $("#topBar").css("display","block");
+    $("#formCo").css("z-index","1");
 }
 
 
