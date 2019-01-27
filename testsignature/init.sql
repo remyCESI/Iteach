@@ -22,7 +22,9 @@ CREATE TABLE information
     DateDepot           DATE,
     SignaturePerso      VARCHAR
     (255),
-    FAIT                BOOLEAN           
+    FAIT                VARCHAR  
+    (50),
+    Montant             int         
     
 )
 
@@ -35,13 +37,15 @@ DELIMITER |
     (100),in pEcole VARCHAR
     (100), in pMoyenPaiement VARCHAR
     (100), in pAdresse VARCHAR
-    (100),in pDateDepot DATE,in pSignaturePerso VARCHAR
-    (100))
+    (100),in pDateDepot DATE,
+    in pSignaturePerso VARCHAR
+    (100)
+    in pMontant int)
     BEGIN
         INSERT into information
-            (Nom, Prenom, CodeInformation,ObjetCotisation,Ecole,MoyenPaiement, Adresse, DateDepot, SignaturePerso, FAIT)
+            (Nom, Prenom, CodeInformation,ObjetCotisation,Ecole,MoyenPaiement, Adresse, DateDepot, SignaturePerso, FAIT, Montant)
         VALUES
-            (pNom, pPrenom, pCodeInformation, pObjetCotisation, pEcole, pMoyenPaiement, pAdresse, pDateDepot, pSignaturePerso, 'à faire');
+            (pNom, pPrenom, pCodeInformation, pObjetCotisation, pEcole, pMoyenPaiement, pAdresse, pDateDepot, pSignaturePerso, 'à faire',pMontant);
 
 
     END

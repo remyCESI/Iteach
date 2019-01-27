@@ -1,19 +1,38 @@
 $('#btnSub').click(function () {
 
-  var test = function convertCanvasToImage(canvas) {
-      
-        Signature= document.getElementById("canvas").toDataURL("image/png");  
-       
-        window.location = Signature;
+    ValNom = $('#nom').val()
+    ValPrenom = $('#prenom').val()
+    ValObjet = $('#objet').val()
+    ValEcole = $('#ecole').val()
+    ValPaiement = $('#paiement').val()
+    ValAdresse = $('#Adresse').val()
+    ValDate = $('#Date').val()
+    Canvas = canvas.toDataURL();
 
 
-     
-    }
-    
-    console.log(test(canvas));
+    $.post(
 
+        'recu.php',
+        {
+            valeurNom: ValNom,
+            valeurPrenom: ValPrenom,
+            valeurObjet: ValObjet,
+            valeurEcole: ValEcole,
+            valeurPaiement: ValPaiement,
+            valeurAdresse: ValAdresse,
+            valeurDate: ValDate,
+            Canvas: Canvas
+        },
+        function (data) {
+		document.location="Success.html"
+
+        },
+        "json"
+    )
+.fail(function(){
+	document.location="Fail.html"
 })
-
+});
 
 
 

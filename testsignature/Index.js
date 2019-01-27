@@ -1,4 +1,4 @@
-$('#btnSub').submit(function () {
+$('#btnSub').click(function () {
 
     ValNom = $('#nom').val()
     ValPrenom = $('#prenom').val()
@@ -7,12 +7,13 @@ $('#btnSub').submit(function () {
     ValPaiement = $('#paiement').val()
     ValAdresse = $('#Adresse').val()
     ValDate = $('#Date').val()
-    Canvas = $('#canvas').toDataURL();
+    ValMontant=$('#Montant').val() 
+    Canvas = canvas.toDataURL();
 
 
     $.post(
 
-        'reçu.php',
+        'recu.php',
         {
             valeurNom: ValNom,
             valeurPrenom: ValPrenom,
@@ -21,14 +22,19 @@ $('#btnSub').submit(function () {
             valeurPaiement: ValPaiement,
             valeurAdresse: ValAdresse,
             valeurDate: ValDate,
+	    valeurMontant: ValMontant,
             Canvas: Canvas
         },
         function (data) {
+		document.location="Success.html"
+
         },
         "json"
-    );
+    )
+.fail(function(){
+	document.location="Fail.html"
 })
-
+});
 
 
 
