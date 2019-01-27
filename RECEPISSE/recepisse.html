@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Iteach reçu</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="reçu.css" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="paint.js"></script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+</head>
+
+<body>
+
+	<div id="globalcontainer"></div>
+	<div id="container1">
+		<div id="adresse">
+
+			<p>ITeach</p>
+			<p>7 Rue Diderot</p>
+			<p>62000 Arras</p>
+			<p>Association régie par la loi du 1er juillet 1901</p>
+			<p>RNA : W621009188</p>
+		</div>
+
+		<div id="logo" class="col">
+			<img src="img/iteach.png" alt="logo iteach">
+		</div>
+	</div>
+
+	<div id="clientName">
+
+		<p id="NomPrenomC"></p>
+		<p id="AdresseC"></p>
+	</div>
+
+	<div id="objet">
+		<p id="objetC">Objet :</p>
+	</div>
+
+	<div id="text">
+
+		<p>Cher membre adhérent,</p>
+		<p>Nous avons bien reçu votre déclaration en date du  ainsi que le règlement de votre cotisation et nous vous en remercions.</p>
+		<p>Pour les besoins de votre comptabilité, nous attestons par la présente que vous avez dûment acquitté auprès de notre association
+			:
+		</p>
+		<p class="list">
+			• Un montant de (montant) euros
+		</p>
+		
+		<p class="list">
+			• Par chèque/espèce/virement
+		</p>
+		<p class="list">
+			• En date du (date du paiement)
+		</p>
+		<p class="list">
+			• Au titre de la cotisation due à raison de votre adhésion à notre association, pour une periode d'un an à partir du 
+		</p>
+		<p>Nous vous rappelons que la cotisation n’est pas soumise à la TVA.</p>
+		<p>Nous vous prions d’agréer, cher membre adhérent, nos sincères salutations.</p>
+		<div id="containerpolitesse">
+			<div id="staff">
+				<p id="politessestaff" >Maxime Hollebecq, trésorier d’ITeach.</p>
+				<img src="img/maxSignature.png" alt="signature Maxime">
+			</div>
+			<div id="client">
+				<p id="politesseclient"> Signature du cotisant:</p>
+				<img src="img/maxSignature.png" alt="signature Maxime">
+
+			</div>
+
+		</div>
+	</div>
+	<script> 
+  
+			$.get(
+					"buildRecepisse.php",
+					function(data)
+					{ 
+					  console.log(data);
+					},
+					
+				  )
+					 
+			   
+		  </script>
+	<script type="text/javascript" src="recepisse.js">
+	</script>
+
+</body>
+
+</html>

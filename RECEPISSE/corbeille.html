@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Iteach recepissé</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="index.css" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="paint.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+</head>
+
+<body>
+
+
+	<form id="formDepot" method="POST" style="padding-bottom:20px">
+
+		<div id="infoarea">
+			<div id="logo">
+				<img src="img/logo.png">
+			</div>
+			<hr style="background-color:#fa6a73">
+
+			<div class="divInfo">
+				<label>Nom</label>
+				<input type="text" id="nom" class="form-control" required="veuillez completer le champ" name="Nom" placeholder="First name">
+			</div>
+			<div class="divInfo">
+				<label>Prenom</label>
+				<input type="text"  id="prenom" class="form-control" required="veuillez completer le champ" name="Prenom" placeholder="Last name">
+			</div>
+			<div class="divInfo">
+				<label>Objet du depot</label>
+				<input type="text" id="objet" class="form-control" required="veuillez completer le champ" name="ObjetDep" placeholder="cotisation">
+			</div>
+
+			<div class="divInfo">
+				<label>Ecole</label>
+				<input id="ecole" name="ecole" placeholder="Boiry Notre Dame" required="veuillez completer le champ" type="text">
+			</div >
+
+			<div class="divInfo">
+				<label>Moyen de paiement</label>
+				<select id="paiement" required="veuillez choisir un moyen de paiement">
+					<option value="">--Choisissez une option--</option>
+					<option value="cheque">Chèque</option>
+					<option value="espece">Espèce</option>
+					<option value="virement">Virement</option>
+				</select>
+			</div >
+
+			<div class="divInfo">
+				<label>Adresse</label>
+				<input id="Adresse" name="Adresse" required="veuillez completer le champ" placeholder="" type="text">
+			</div>
+
+			<div class="divInfo">
+				<label>Montant</label>
+				<input id="Montant" name="Montant" required="veuillez completer le champ" placeholder="10 €" type="text">
+			</div>
+
+			<div class="divInfo">
+					<label>Date</label>
+					<input id="Date" name="Date" required="veuillez renseigner la date"  type="date">
+			</div>
+			
+			<div class="divInfo">
+				<label>Signature</label>
+				<canvas id="canvas" width="300" height="200"></canvas>
+				<input type="reset" id="reset" value="Réinitialiser" />
+			</div>
+
+			<div class="divInfo">
+				<button id="btnSub" type="submit" style="border-radius:5px;">Envoyer</button>
+			</div>
+		</div>
+
+
+	</form>
+</body>
+<script type="text/javascript" src="test.js"></script>
+</html>

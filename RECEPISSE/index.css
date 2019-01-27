@@ -1,0 +1,79 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    height:800px;
+    background-image: url("img/office.jpg");
+    
+}
+#formDepot
+{
+
+  
+    margin-bottom: 70px;
+    color:#fff;  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+canvas
+{
+ background-color: white;
+ cursor:crosshair;
+}
+
+button
+{
+
+color: #ffffff;
+background-color: #fa6a73;
+padding: 10px;
+border-color: rgba(0, 0, 0, 0.822);
+}
+button:hover
+{box-shadow: 5px 5px 5px black;}
+
+#reset{
+color: #ffffff;
+background-color: #fa6a73;
+padding: 1px;
+border-color: rgba(0, 0, 0, 0.822);
+border-radius: 5px 5px 5px 5px; 
+font-size: 12px;
+}
+.divInfo
+{
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+font-family: Lato;
+}
+#infoarea
+{
+background-color: rgba(0, 0, 0, 0.822);  
+padding: 20px;
+}
+#logo{
+    margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+    }
+    label {
+        margin-bottom: 5px;
+    }
+
+#SocialBtn{
+    display: flex;
+    justify-content:space-around;   
+    padding: 20px;
+}
+
+#textz{
+
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
